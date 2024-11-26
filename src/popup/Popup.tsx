@@ -1,10 +1,15 @@
 import React, { useState } from 'react';
+import './popup.css';
 
-function Popup() {
-  const [input, setInput] = useState('');
-  const [loading, setLoading] = useState(false);
+interface RequestBody {
+  input: string;
+}
 
-  const handleSubmit = async () => {
+const Popup: React.FC = () => {
+  const [input, setInput] = useState<string>('');
+  const [loading, setLoading] = useState<boolean>(false);
+
+  const handleSubmit = async (): Promise<void> => {
     setLoading(true);
     try {
       const response = await fetch('http://example.com/api', {
@@ -12,7 +17,7 @@ function Popup() {
         headers: {
           'Content-Type': 'application/json',
         },
-        body: JSON.stringify({ input }),
+        body: JSON.stringify({ input } as RequestBody),
       });
 
       if (!response.ok) {
@@ -34,7 +39,7 @@ function Popup() {
     <div className="popup-container">
       <textarea
         value={input}
-        onChange={(e) => setInput(e.target.value)}
+        onChange={(e: React.ChangeEvent<HTMLTextAreaElement>) => setInput(e.target.value)}
         placeholder="Enter your text here..."
         rows={4}
         className="input-textarea"
@@ -48,6 +53,6 @@ function Popup() {
       </button>
     </div>
   );
-}
+};
 
 export default Popup;

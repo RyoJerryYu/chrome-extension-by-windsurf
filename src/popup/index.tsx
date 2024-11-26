@@ -4,5 +4,9 @@ import Popup from './Popup';
 import './popup.css';
 
 const container = document.getElementById('root');
+if (!container) {
+  throw new Error('Failed to find root element');
+}
+
 const root = createRoot(container);
 root.render(<Popup />);
