@@ -4,8 +4,11 @@
 ![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
 ![Webpack](https://img.shields.io/badge/Webpack-8DD6F9?style=for-the-badge&logo=webpack&logoColor=black)
 ![Chrome Extension](https://img.shields.io/badge/Chrome_Extension-4285F4?style=for-the-badge&logo=google-chrome&logoColor=white)
+![Windsurf](https://img.shields.io/badge/Built_with-Windsurf_IDE-FF6B6B?style=for-the-badge)
 
 A Chrome extension built with React and TypeScript that allows you to quickly send text notes to a specified API endpoint.
+
+> 🌟 **Project Generated with Windsurf IDE**: This project was bootstrapped and developed using [Windsurf IDE](https://codeium.com/windsurf), a next-generation development environment that leverages AI to streamline the development process. Windsurf IDE provides intelligent code generation, real-time assistance, and automated project setup, making it easier to create high-quality Chrome extensions.
 
 ## Features
 
@@ -14,6 +17,7 @@ A Chrome extension built with React and TypeScript that allows you to quickly se
 - 🔒 Secure CSP configuration
 - 📝 Text input with POST request functionality
 - 🛠️ Built with Webpack 5
+- 🤖 AI-assisted development with Windsurf IDE
 
 ## Installation
 
@@ -55,6 +59,17 @@ memos-chrome/
 ├── webpack.config.js     # Webpack configuration
 └── tsconfig.json        # TypeScript configuration
 ```
+
+### Generated with Windsurf IDE
+
+This project was generated and developed using Windsurf IDE, which provided:
+- Automated project scaffolding with best practices
+- Intelligent code generation for React components
+- TypeScript integration and type safety
+- Webpack configuration optimization
+- Security best practices implementation
+- Automated icon generation
+- Documentation generation
 
 ### Available Scripts
 
@@ -99,6 +114,7 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 ## Acknowledgments
 
+- [Windsurf IDE](https://codeium.com/windsurf) - Next-generation AI-powered development environment
 - [React](https://reactjs.org/)
 - [TypeScript](https://www.typescriptlang.org/)
 - [Chrome Extensions Documentation](https://developer.chrome.com/docs/extensions/)
