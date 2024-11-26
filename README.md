@@ -57,8 +57,23 @@ memos-chrome/
 │   ├── popup.html        # Popup HTML template
 │   └── icons/            # Extension icons
 ├── webpack.config.js     # Webpack configuration
-└── tsconfig.json        # TypeScript configuration
+├── tsconfig.json        # TypeScript configuration
+├── README.md           # Project documentation
+├── LICENSE            # MIT license
+└── DEVELOPMENT_NOTES.md # Detailed development journey
 ```
+
+### Development Journey
+
+This project was developed with the assistance of Windsurf IDE, and we've documented the entire development process, including challenges faced and solutions implemented. Check out [DEVELOPMENT_NOTES.md](./DEVELOPMENT_NOTES.md) for:
+
+- Detailed technical decisions and their rationale
+- Challenges encountered and their solutions
+- Security considerations and implementations
+- TypeScript migration process
+- Icon generation techniques
+- Future improvement ideas
+- Learning outcomes
 
 ### Generated with Windsurf IDE
 
